@@ -6,7 +6,7 @@ namespace AbstractFactory
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Abstarct Factory Example");
+            Console.WriteLine("Hello World!");
         }
     }
 }
