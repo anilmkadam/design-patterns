@@ -10,8 +10,8 @@ namespace FactoryMethodPattern
             DecodedImage decodedImage;
             IImageReader reader = null;
 
-            string image  = args[0];
-            string format = image.Substring(image.IndexOf('.'));
+            string image  = "anil.gif";
+            string format = image.Substring(image.IndexOf('.') + 1);
 
             if (format.Equals("gif")) 
             {
@@ -24,11 +24,9 @@ namespace FactoryMethodPattern
 
             if(reader != null)
             {
-                Console.WriteLine("Inside if");
                 decodedImage = reader.GetDecodedImage();
                 Console.WriteLine(decodedImage.ToString());
             }
-            Console.WriteLine("Outside if");
         }
     }
 }
